@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8" />
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,6 +16,7 @@
       }
    </style>
 </head>
+
 <body>
    <!-- navbar -->
    <nav class="navbar navbar-expand-md navbar-light">
@@ -415,9 +417,12 @@
          <div class="row justify-content-center">
             <div class="col-md-8 text-center">
                <p class="text-muted my-4">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias molestiae totam laboriosam aliquam maxime, amet ipsam quae eum quod cupiditate! Vel beatae magnam ab sed eligendi odit placeat dicta impedit.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias molestiae totam laboriosam aliquam
+                  maxime, amet ipsam quae eum quod cupiditate! Vel beatae magnam ab sed eligendi odit placeat dicta
+                  impedit.
                </p>
-               <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">Register for Updates</button>
+               <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">Register for
+                  Updates</button>
             </div>
          </div>
       </div>
@@ -433,7 +438,9 @@
             </div>
             <div class="modal-body">
                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam laborum quasi iure vero. Qui tenetur laborum aut. Consequatur quas at blanditiis rerum dolore sequi architecto, doloribus, nobis, perferendis rem velit.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam laborum quasi iure vero. Qui tenetur
+                  laborum aut. Consequatur quas at blanditiis rerum dolore sequi architecto, doloribus, nobis,
+                  perferendis rem velit.
                </p>
                <label for="modal-email" class="form-label">Your email : </label>
                <input type="email" class="form-control" id="modal-email" placeholder="mario@example.com">
@@ -453,8 +460,22 @@
       </div>
       <div class="offcanvas-body">
          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, suscipit totam molestiae eius dicta quos expedita perspiciatis facilis deserunt quasi sint reprehenderit perferendis tempore, consequatur aliquid, excepturi earum ea placeat.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, suscipit totam molestiae eius dicta
+            quos expedita perspiciatis facilis deserunt quasi sint reprehenderit perferendis tempore, consequatur
+            aliquid, excepturi earum ea placeat.
          </p>
+         <!-- dropdown -->
+         <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="book-dropdown" data-bs-toggle="dropdown"
+               aria-expanded="false">
+               Choose a Book Title
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+               <li><a href="#" class="dropdown-item">Become a React Superhero</a></li>
+               <li><a href="#" class="dropdown-item">Conquering Vue.js</a></li>
+               <li><a href="#" class="dropdown-item">Levelling up Your Next.js</a></li>
+            </ul>
+         </div>
       </div>
    </div>
 
@@ -462,12 +483,11 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"></script>
-      <script>
-         const tooltip = document.querySelectorAll('.tt')
-         tooltip.forEach(t => {
-            new bootstrap.Tooltip(t)
-         })
-      </script>
+   <script>
+      const tooltip = document.querySelectorAll('.tt')
+      tooltip.forEach(t => {
+         new bootstrap.Tooltip(t)
+      })
+   </script>
 </body>
-
 </html>
