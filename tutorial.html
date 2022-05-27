@@ -14,6 +14,80 @@
     />
   </head>
   <body>
+    <!-- tabs -->
+    <h1 class="text-center"><u>Tabs</u></h1>
+    <div class="container my-5">
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <button
+            class="nav-link active"
+            id="nav-home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-home"
+            type="button"
+            role="tab"
+            aria-controls="nav-home"
+            aria-selected="true"
+          >
+            Home
+          </button>
+          <button
+            class="nav-link"
+            id="nav-profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-profile"
+            type="button"
+            role="tab"
+            aria-controls="nav-profile"
+            aria-selected="true"
+          >
+            Profile
+          </button>
+          <button
+            class="nav-link"
+            id="nav-contact-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-contact"
+            type="button"
+            role="tab"
+            aria-controls="nav-contact"
+            aria-selected="true"
+          >
+            Contact
+          </button>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active p-3" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+          <h2>Home</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, saepe? Cumque minima nihil hic? Ea ut quae sunt velit. Nesciunt minima voluptatibus aliquid aliquam repellat exercitationem doloribus nobis praesentium libero?
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel perspiciatis aliquam minus eaque atque asperiores ullam aliquid labore odit deserunt! Odio error voluptate ipsum suscipit molestiae deleniti sed libero. Explicabo.
+          </p>
+        </div>
+        <div class="tab-pane fade p-3" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+          <h2>Profile</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus praesentium laudantium vitae cupiditate molestiae, maiores quam libero voluptas obcaecati natus consequatur, dolore iure sint quis ipsam laborum. Laboriosam, enim laudantium.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, ducimus exercitationem quisquam non unde velit veritatis sint consectetur ipsum cupiditate beatae, commodi atque dolorum voluptates. Similique, consequatur! Voluptatum, culpa enim.
+          </p>
+        </div>
+        <div class="tab-pane fade p-3" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+          <h2>Contact</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus praesentium laudantium vitae cupiditate molestiae, maiores quam libero voluptas obcaecati natus consequatur, dolore iure sint quis ipsam laborum. Laboriosam, enim laudantium.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, ducimus exercitationem quisquam non unde velit veritatis sint consectetur ipsum cupiditate beatae, commodi atque dolorum voluptates. Similique, consequatur! Voluptatum, culpa enim.
+          </p>
+        </div>
+      </div>
+    </div>
+
     <!-- Color & Typography -->
     <h1 class="text-center"><u>Color & Typography</u></h1>
     <!-- heading tags -->
@@ -187,7 +261,6 @@
       </div>
     </div>
 
-
     <div class="container-lg my-5">
       <h2>Columns Width</h2>
       <div class="row">
@@ -202,7 +275,6 @@
         </div>
       </div>
     </div>
-
 
     <div class="container-lg my-5">
       <h2>Responsive Column Width</h2>
@@ -219,7 +291,6 @@
       </div>
     </div>
 
-
     <div class="container-lg my-5">
       <h2>Justifying Columns</h2>
       <div class="row justify-content-center">
@@ -235,7 +306,6 @@
       </div>
     </div>
 
-    
     <!-- BootStrap JS Bundle CDN -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
