@@ -2,16 +2,31 @@
 $primary: #c29938;
 $light: #fbf5e5;
 
-// import the function & variables
-@import "../node_modules/bootstrap/scss/_functions";
-@import "../node_modules/bootstrap/scss/_variables";
+// import the function, variables & utilities
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/utilities";
 
-$custom-theme-colors: (
-   "altlight": #f2ebfa,
-   "altdark": #522192
+$utilities: (
+   "text-color": (
+      property: color,
+      class: text-color,
+      values: (
+         "altlight": #f2ebfa,
+         "altdark": #522192
+      )
+   ),
+   "bg-color": (
+      property: background,
+      class: bg-color,
+      values: (
+         "altlight": #f2ebfa,
+         "altdark": #522192
+      )
+   )
 );
 
-$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+// $theme-colors: map-merge($theme-colors, $custom-theme-colors);
 
 // import bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap';
